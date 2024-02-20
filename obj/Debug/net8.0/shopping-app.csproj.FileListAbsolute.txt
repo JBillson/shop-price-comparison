@@ -17,3 +17,4 @@ C:\Users\justi\Documents\work\personal\shopping-app\obj\Debug\net8.0\shopping-ap
 C:\Users\justi\Documents\work\personal\shopping-app\obj\Debug\net8.0\shopping-app.csproj.CopyComplete
 C:\Users\justi\Documents\work\personal\shopping-app\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\justi\Documents\work\personal\shopping-app\bin\Debug\net8.0\F23.StringSimilarity.dll
+C:\Users\justi\Documents\work\personal\shopping-app\obj\Debug\net8.0\shopping-app.sourcelink.json

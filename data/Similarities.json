@@ -1,0 +1,512 @@
+[
+  {
+    "Item1": 0.90625,
+    "Item2": "Ripe &amp; Ready Avocados 4 pk",
+    "Item3": "Ripe &amp; Ready Avocados 4 Pack"
+  },
+  {
+    "Item1": 0.875,
+    "Item2": "Ripe &amp; Ready Avocados 2 pk",
+    "Item3": "Ripe &amp; Ready Avocados 4 Pack"
+  },
+  {
+    "Item1": 0.8095238095238095,
+    "Item2": "Large Carrots 1 kg",
+    "Item3": "Large Carrots Bag 1kg"
+  },
+  {
+    "Item1": 0.88,
+    "Item2": "White Hotdog Rolls 6 pk",
+    "Item3": "White Hotdog Rolls 6 Pack"
+  },
+  {
+    "Item1": 0.8636363636363636,
+    "Item2": "Lean Beef Mince 1 kg",
+    "Item3": "Lean Beef Mince Per kg"
+  },
+  {
+    "Item1": 0.8928571428571429,
+    "Item2": "White Hamburger Rolls 6 pk",
+    "Item3": "White Hamburger Rolls 6 Pack"
+  },
+  {
+    "Item1": 0.875,
+    "Item2": "Ripe &amp; Ready Avocados 6 pk",
+    "Item3": "Ripe &amp; Ready Avocados 4 Pack"
+  },
+  {
+    "Item1": 0.8484848484848485,
+    "Item2": "Golden Delicious Apples 1.5 kg",
+    "Item3": "Golden Delicious Apples Bag 1.5kg"
+  },
+  {
+    "Item1": 0.8205128205128205,
+    "Item2": "Sliced Portabellini Mushrooms 250 g",
+    "Item3": "Sliced Portabellini Mushrooms Pack 225g"
+  },
+  {
+    "Item1": 0.8235294117647058,
+    "Item2": "Green Beans 350 g",
+    "Item3": "Green Beans 600g"
+  },
+  {
+    "Item1": 0.8095238095238095,
+    "Item2": "Peeled Onions 1 kg",
+    "Item3": "Peeled Onions Bag 1kg"
+  },
+  {
+    "Item1": 0.8181818181818181,
+    "Item2": "Lean Beef Mince 500 g",
+    "Item3": "Lean Beef Mince Per kg"
+  },
+  {
+    "Item1": 0.8928571428571429,
+    "Item2": "Extra Lean Beef Mince 1 kg",
+    "Item3": "Extra Lean Beef Mince Per kg"
+  },
+  {
+    "Item1": 0.9090909090909091,
+    "Item2": "Julienne Carrots 100 g",
+    "Item3": "Julienne Carrot 100g"
+  },
+  {
+    "Item1": 0.8928571428571429,
+    "Item2": "Brown Hamburger Rolls 6 pk",
+    "Item3": "Brown Hamburger Rolls 6 Pack"
+  },
+  {
+    "Item1": 1.0,
+    "Item2": "Sweetcorn Mini Cobs",
+    "Item3": "Sweetcorn Mini Cobs"
+  },
+  {
+    "Item1": 0.9642857142857143,
+    "Item2": "Portabellini Mushrooms 250 g",
+    "Item3": "Portabellini Mushrooms 250g"
+  },
+  {
+    "Item1": 0.8571428571428572,
+    "Item2": "Extra Lean Beef Mince 500 g",
+    "Item3": "Extra Lean Beef Mince Per kg"
+  },
+  {
+    "Item1": 0.875,
+    "Item2": "Gem Squash Halves 6 pk",
+    "Item3": "Gem Squash Halves 6 Pack"
+  },
+  {
+    "Item1": 0.9534883720930233,
+    "Item2": "Crosse and Blackwell Tangy Mayonnaise 750 g",
+    "Item3": "Crosse And Blackwell Tangy Mayonnaise 750g"
+  },
+  {
+    "Item1": 0.8076923076923077,
+    "Item2": "Bakers Original Red Label Lemon Cream Biscuits 200 g",
+    "Item3": "Bakers Red Label Lemon Cream Biscuits 200g"
+  },
+  {
+    "Item1": 0.9361702127659575,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900g"
+  },
+  {
+    "Item1": 0.8958333333333334,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35kg"
+  },
+  {
+    "Item1": 0.9787234042553191,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450g"
+  },
+  {
+    "Item1": 0.8823529411764706,
+    "Item2": "Flora Light 40% Fat Spread 1 kg",
+    "Item3": "Flora Light 40% Fat Spread Tub 1kg"
+  },
+  {
+    "Item1": 0.8518518518518519,
+    "Item2": "Bakers Provita Original Wheat Toast Crackerbread 125 g",
+    "Item3": "Provita Original Wheat Toast Crackerbread 125g"
+  },
+  {
+    "Item1": 0.825,
+    "Item2": "Nestlé KitKat Milk Chocolate Minis 180 g",
+    "Item3": "Nestlé KitKat Mini Chocolate Bars 180g"
+  },
+  {
+    "Item1": 0.8157894736842105,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Slab 150g"
+  },
+  {
+    "Item1": 0.8378378378378378,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Slab 80g"
+  },
+  {
+    "Item1": 0.8611111111111112,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Bar 37g"
+  },
+  {
+    "Item1": 0.8529411764705882,
+    "Item2": "Flora Light 40% Fat Spread 500 g",
+    "Item3": "Flora Light 40% Fat Spread Tub 1kg"
+  },
+  {
+    "Item1": 0.9787234042553191,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900g"
+  },
+  {
+    "Item1": 0.8958333333333334,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35kg"
+  },
+  {
+    "Item1": 0.9361702127659575,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900 g",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450g"
+  },
+  {
+    "Item1": 0.8157894736842105,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Slab 150g"
+  },
+  {
+    "Item1": 0.8378378378378378,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Slab 80g"
+  },
+  {
+    "Item1": 0.8611111111111112,
+    "Item2": "Cadbury Dairy Milk Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Bar 37g"
+  },
+  {
+    "Item1": 0.8666666666666667,
+    "Item2": "Lucky Star Pilchards in Tomato Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Tomato Sauce Tin 400g"
+  },
+  {
+    "Item1": 0.8809523809523809,
+    "Item2": "Lucky Star Pilchards in Tomato Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Tomato Sauce 215g"
+  },
+  {
+    "Item1": 0.8809523809523809,
+    "Item2": "Lucky Star Pilchards in Tomato Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Tomato Sauce 155g"
+  },
+  {
+    "Item1": 0.8108108108108107,
+    "Item2": "Traditional Thick Boerewors Avg 600 g",
+    "Item3": "Traditional Thick Boerewors Per kg"
+  },
+  {
+    "Item1": 0.8125,
+    "Item2": "Butternut 2.5 kg",
+    "Item3": "Butternut Per kg"
+  },
+  {
+    "Item1": 0.813953488372093,
+    "Item2": "Bakers Provita Rye Toast Crackerbread 125 g",
+    "Item3": "Provita Rye Toast Crackerbread 125g"
+  },
+  {
+    "Item1": 0.8035714285714286,
+    "Item2": "Lay&#x27;s Thai Sweet Chilli Flavoured Chips 120 g",
+    "Item3": "Lay&#039;s Thai Sweet Chilli Flavoured Potato Chips 120g"
+  },
+  {
+    "Item1": 0.8064516129032258,
+    "Item2": "Baby Button Mushrooms 150 g",
+    "Item3": "Baby Button Mushrooms Pack 150g"
+  },
+  {
+    "Item1": 0.9117647058823529,
+    "Item2": "Kiri Medium Fat Cream Cheese 200 g",
+    "Item3": "Kiri Medium Fat Cream Cheese 216g"
+  },
+  {
+    "Item1": 0.8157894736842105,
+    "Item2": "Cadbury Dairy Milk Wholenut Slab 150 g",
+    "Item3": "Cadbury Dairy Milk Chocolate Slab 150g"
+  },
+  {
+    "Item1": 0.8333333333333334,
+    "Item2": "Futurelife Smart Food Chocolate Flavoured Cereal 500 g",
+    "Item3": "Futurelife Smart Food Original Flavoured Cereal 500g"
+  },
+  {
+    "Item1": 0.9814814814814815,
+    "Item2": "Futurelife Smart Food Chocolate Flavoured Cereal 500 g",
+    "Item3": "Futurelife Smart Food Chocolate Flavoured Cereal 500g"
+  },
+  {
+    "Item1": 0.8148148148148149,
+    "Item2": "Royal Gala Apples 1.5 kg",
+    "Item3": "Royal Gala Apples Bag 1.5kg"
+  },
+  {
+    "Item1": 0.9423076923076923,
+    "Item2": "Futurelife Smart Food Original Flavour Cereal 500 g",
+    "Item3": "Futurelife Smart Food Original Flavoured Cereal 500g"
+  },
+  {
+    "Item1": 0.8666666666666667,
+    "Item2": "Cadbury Dairy Milk Biscuit Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Biscuit Chocolate Slab 80g"
+  },
+  {
+    "Item1": 0.8095238095238095,
+    "Item2": "Cadbury Dairy Milk Biscuit Chocolate 80 g",
+    "Item3": "Cadbury Dairy Milk Whispers Chocolate 200g"
+  },
+  {
+    "Item1": 0.8222222222222222,
+    "Item2": "Nestlé Bar-One Milk Chocolate Bar Minis 189 g",
+    "Item3": "Nestlé Bar-One Mini Chocolate Bars 189g"
+  },
+  {
+    "Item1": 0.8823529411764706,
+    "Item2": "Iwisa No 1 Super Maize Meal 2.5 kg",
+    "Item3": "Iwisa No. 1 Super Maize Meal 5kg"
+  },
+  {
+    "Item1": 0.8529411764705882,
+    "Item2": "Iwisa No 1 Super Maize Meal 2.5 kg",
+    "Item3": "Iwisa No. 1 Super Maize Meal 10kg"
+  },
+  {
+    "Item1": 0.8723404255319149,
+    "Item2": "Bovril Meat And Vegetable Extract Spread 250 g",
+    "Item3": "Bovril Meat &amp; Vegetable Extract Spread 250g"
+  },
+  {
+    "Item1": 0.8723404255319149,
+    "Item2": "Nestlé Peppermint Crisp Milk Chocolate Bar 49 g",
+    "Item3": "Nestlé Peppermint Crisp Chocolate Bar 49g"
+  },
+  {
+    "Item1": 0.8571428571428572,
+    "Item2": "Kiri® Medium Fat Cream Cheese 12 pk",
+    "Item3": "Kiri Medium Fat Cream Cheese 216g"
+  },
+  {
+    "Item1": 0.8529411764705882,
+    "Item2": "Cadbury Crunchie Chocolate 40 g",
+    "Item3": "Cadbury Crunchie Chocolate Bar 40g"
+  },
+  {
+    "Item1": 0.9696969696969697,
+    "Item2": "Flora Regular 50% Fat Spread 1 kg",
+    "Item3": "Flora Regular 50% Fat Spread 1kg"
+  },
+  {
+    "Item1": 0.8571428571428572,
+    "Item2": "Cerebos Iodated Table Salt 1 kg",
+    "Item3": "Cerebos Iodated Table Salt Pack 1kg"
+  },
+  {
+    "Item1": 0.9032258064516129,
+    "Item2": "Cerebos Iodated Table Salt 1 kg",
+    "Item3": "Cerebos Iodated Table Salt 500g"
+  },
+  {
+    "Item1": 0.935483870967742,
+    "Item2": "Cerebos Iodated Table Salt 1 kg",
+    "Item3": "Cerebos Iodated Table Salt 125g"
+  },
+  {
+    "Item1": 1.0,
+    "Item2": "Nestlé Gold Cross Full Cream Sweetened Condensed Milk 385g",
+    "Item3": "Nestlé Gold Cross Full Cream Sweetened Condensed Milk 385g"
+  },
+  {
+    "Item1": 0.962962962962963,
+    "Item2": "Bakers Cream Crackers 200 g",
+    "Item3": "Bakers Cream Crackers 200g"
+  },
+  {
+    "Item1": 0.9117647058823529,
+    "Item2": "White Star Super Maize Meal 2.5 kg",
+    "Item3": "White Star Super Maize Meal 5kg"
+  },
+  {
+    "Item1": 0.9705882352941176,
+    "Item2": "White Star Super Maize Meal 2.5 kg",
+    "Item3": "White Star Super Maize Meal 2.5kg"
+  },
+  {
+    "Item1": 0.8333333333333334,
+    "Item2": "Nestlé KitKat Milk Chocolate 41.5 g",
+    "Item3": "Nestlé KitKat Milk Chocolate Bar 85g"
+  },
+  {
+    "Item1": 0.8604651162790697,
+    "Item2": "Wellington&#x27;s Sweet Chilli Sauce 450 ml",
+    "Item3": "Wellington&#039;s Sweet Chilli Sauce 700ml"
+  },
+  {
+    "Item1": 0.8837209302325582,
+    "Item2": "Wellington&#x27;s Sweet Chilli Sauce 450 ml",
+    "Item3": "Wellington&#039;s Sweet Chilli Sauce 500ml"
+  },
+  {
+    "Item1": 0.8372093023255813,
+    "Item2": "Wellington&#x27;s Sweet Chilli Sauce 450 ml",
+    "Item3": "Wellington&#039;s Sweet Chilli Sauce 375ml"
+  },
+  {
+    "Item1": 0.8076923076923077,
+    "Item2": "Super Maize Meal 2.5 kg",
+    "Item3": "Ace Super Maize Meal 2.5kg"
+  },
+  {
+    "Item1": 0.8108108108108107,
+    "Item2": "Nestlé Tex Chocolate Bar Minis 182 g",
+    "Item3": "Nestlé Tex Chocolate Bar Fun Bag 182g"
+  },
+  {
+    "Item1": 0.8823529411764706,
+    "Item2": "Flora Regular 50% Fat Spread 500 g",
+    "Item3": "Flora Regular 50% Fat Spread 1kg"
+  },
+  {
+    "Item1": 0.8125,
+    "Item2": "The Laughing Cow Full Fat Cheese Spread 8 pk",
+    "Item3": "The Laughing Cow Medium Fat Cheese Spread 8 Pack"
+  },
+  {
+    "Item1": 0.9696969696969697,
+    "Item2": "Snowflake Cake Wheat Flour 2.5 kg",
+    "Item3": "Snowflake Cake Wheat Flour 2.5kg"
+  },
+  {
+    "Item1": 0.8787878787878788,
+    "Item2": "Snowflake Cake Wheat Flour 2.5 kg",
+    "Item3": "Snowflake Cake Wheat Flour 1kg"
+  },
+  {
+    "Item1": 0.9090909090909091,
+    "Item2": "Snowflake Cake Wheat Flour 2.5 kg",
+    "Item3": "Snowflake Cake Wheat Flour 5kg"
+  },
+  {
+    "Item1": 0.819672131147541,
+    "Item2": "Futurelife Smart Food Crunch Chocolate Flavoured Cereal 425 g",
+    "Item3": "Futurelife Smart Food Chocolate Flavoured Cereal 500g"
+  },
+  {
+    "Item1": 0.90625,
+    "Item2": "Snowflake Cake Wheat Flour 1kg",
+    "Item3": "Snowflake Cake Wheat Flour 2.5kg"
+  },
+  {
+    "Item1": 1.0,
+    "Item2": "Snowflake Cake Wheat Flour 1kg",
+    "Item3": "Snowflake Cake Wheat Flour 1kg"
+  },
+  {
+    "Item1": 0.9666666666666667,
+    "Item2": "Snowflake Cake Wheat Flour 1kg",
+    "Item3": "Snowflake Cake Wheat Flour 5kg"
+  },
+  {
+    "Item1": 0.8421052631578947,
+    "Item2": "Snowflake Self Raising Flour 1kg",
+    "Item3": "Snowflake Self Raising Wheat Flour 1kg"
+  },
+  {
+    "Item1": 0.8333333333333334,
+    "Item2": "Cadbury 5 Star Milk Chocolate 48.5 g",
+    "Item3": "Cadbury 5 Star Chocolate 48.5g"
+  },
+  {
+    "Item1": 0.8611111111111112,
+    "Item2": "Nestlé KitKat Milk Chocolate 135 g",
+    "Item3": "Nestlé KitKat Milk Chocolate Bar 85g"
+  },
+  {
+    "Item1": 0.8775510204081632,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35 kg",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 900g"
+  },
+  {
+    "Item1": 0.9795918367346939,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35 kg",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35kg"
+  },
+  {
+    "Item1": 0.8979591836734694,
+    "Item2": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 1.35 kg",
+    "Item3": "Bokomo Weet-Bix Wholegrain Wheat Biscuits 450g"
+  },
+  {
+    "Item1": 0.8285714285714285,
+    "Item2": "Cerebos Iodated Table Salt 500 g",
+    "Item3": "Cerebos Iodated Table Salt Pack 1kg"
+  },
+  {
+    "Item1": 0.8125,
+    "Item2": "Cerebos Iodated Table Salt 500 g",
+    "Item3": "Cerebos Iodated Sea Salt 500g"
+  },
+  {
+    "Item1": 0.96875,
+    "Item2": "Cerebos Iodated Table Salt 500 g",
+    "Item3": "Cerebos Iodated Table Salt 500g"
+  },
+  {
+    "Item1": 0.875,
+    "Item2": "Cerebos Iodated Table Salt 500 g",
+    "Item3": "Cerebos Iodated Table Salt 125g"
+  },
+  {
+    "Item1": 0.8333333333333334,
+    "Item2": "Wellingtons Sweet Chilli Sauce 700 ml",
+    "Item3": "Wellington&#039;s Sweet Chilli Sauce 700ml"
+  },
+  {
+    "Item1": 0.8095238095238095,
+    "Item2": "Wellingtons Sweet Chilli Sauce 700 ml",
+    "Item3": "Wellington&#039;s Sweet Chilli Sauce 500ml"
+  },
+  {
+    "Item1": 0.9565217391304348,
+    "Item2": "Lucky Star Pilchards in Hot Chilli Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Hot Chilli Sauce 400g"
+  },
+  {
+    "Item1": 0.8723404255319149,
+    "Item2": "Lucky Star Pilchards in Hot Chilli Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Sweet Chilli Sauce 400g"
+  },
+  {
+    "Item1": 0.8913043478260869,
+    "Item2": "Lucky Star Pilchards in Hot Chilli Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Hot Chilli Sauce 215g"
+  },
+  {
+    "Item1": 0.8913043478260869,
+    "Item2": "Lucky Star Pilchards in Hot Chilli Sauce 400 g",
+    "Item3": "Lucky Star Pilchards In Hot Chilli Sauce 155g"
+  },
+  {
+    "Item1": 0.8717948717948718,
+    "Item2": "Nestlé Dessert and Cooking Cream 290 g",
+    "Item3": "Nestlé Dessert &amp; Cooking Cream 290g"
+  },
+  {
+    "Item1": 0.9722222222222222,
+    "Item2": "Black Cat Smooth Peanut Butter 400 g",
+    "Item3": "Black Cat Smooth Peanut Butter 400g"
+  },
+  {
+    "Item1": 0.9444444444444444,
+    "Item2": "Black Cat Smooth Peanut Butter 400 g",
+    "Item3": "Black Cat Smooth Peanut Butter 800g"
+  }
+]

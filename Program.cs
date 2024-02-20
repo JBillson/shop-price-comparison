@@ -1,19 +1,16 @@
 ﻿using Newtonsoft.Json;
-using shopping_app.Parsers;
 using shopping_app.Products;
-using shopping_app.Products.Interface;
-using shopping_app.Utilities;
 
 namespace shopping_app;
 
 internal abstract class Program
 {
-    private static readonly WoolworthsParser WooliesParser = new();
-    private static readonly PnpParser PnpParser = new();
-    private static readonly CheckersParser CheckersParser = new();
-
+    
     public static async Task Main(string[] args)
     {
+        var productCache = new ProductCache();
+        await productCache.InitCache();
+        
         #region Woolies
 
         // const string wooliesUrl = "https://www.woolworths.co.za/cat/Food/_/N-1z13sk5";
@@ -45,7 +42,7 @@ internal abstract class Program
 
         #region Evaluate
 
-        var path = @"C:\Users\justi\Documents";
+        var path = @"C:\Users\justi\Documents\work\personal\shopping-app\data";
 
         var wooliesRaw = await File.ReadAllTextAsync($@"{path}\Woolworths.json");
         var wooliesProducts = JsonConvert.DeserializeObject<List<WoolworthsProduct>>(wooliesRaw);
@@ -93,49 +90,4 @@ internal abstract class Program
         #endregion
     }
 
-    private static async Task<List<IProduct>> GetProductsAsync(string url, bool searchMultiplePages = false)
-    {
-        var htmlDocs = await RequestManager.GetHtmlFromUrl(url, searchMultiplePages);
-        if (htmlDocs == null || htmlDocs.Count == 0) return [];
-
-        List<IProduct> products = [];
-        switch (url)
-        {
-            case var _ when url.Contains("woolworths.co.za"):
-                foreach (var htmlDoc in htmlDocs)
-                    products.AddRange(WooliesParser.GetProducts(htmlDoc, true));
-
-                await SaveToFileAsync("Woolworths", products);
-                break;
-            case var _ when url.Contains("pnp.co.za"):
-                foreach (var htmlDoc in htmlDocs)
-                    products.AddRange(PnpParser.GetProducts(htmlDoc, true));
-                break;
-            case var _ when url.Contains("checkers.co.za"):
-                foreach (var htmlDoc in htmlDocs)
-                    products.AddRange(CheckersParser.GetProducts(htmlDoc, true));
-
-                await SaveToFileAsync("Checkers", products);
-
-                break;
-        }
-
-        return products;
-    }
-
-    private static async Task SaveToFileAsync(string fileName, List<IProduct> products)
-    {
-        try
-        {
-            var path = $@"C:\Users\justi\Documents\{fileName}.json";
-            Console.WriteLine($"Saving {products.Count} products to {path}");
-            await File.WriteAllTextAsync(path, JsonConvert.SerializeObject(products));
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("Failed to save products!\n" +
-                              $"{e.Message}");
-            throw;
-        }
-    }
 }
