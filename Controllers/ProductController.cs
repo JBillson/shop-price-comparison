@@ -9,25 +9,64 @@ namespace shopping_app.Controllers;
 
 public class ProductController
 {
+    private readonly WoolworthsParser _wooliesParser = new();
+    private readonly PnpParser _pnpParser = new();
+    private readonly CheckersParser _checkersParser = new();
+    private readonly ProductCache _productCache = new();
     
-    private static readonly WoolworthsParser WooliesParser = new();
-    private static readonly PnpParser PnpParser = new();
-    private static readonly CheckersParser CheckersParser = new();
-    
-    
-    public static async Task<List<IProduct>> GetProductsAsync(Shop shop, bool searchMultiplePages = false)
+    public async Task<List<Product>> GetProductsAsync(Shop shop)
     {
-        var webPages = await RequestManager.ScrapeShop(shop, searchMultiplePages);
-        if (webPages == null || webPages.Count == 0) return [];
+        List<Product> products;
+        Console.WriteLine($"Getting {shop} Products");
+        // return products from cache if not expired
+        if (!_productCache.IsExpired(shop))
+        {
+            products = _productCache.GetProducts(shop);
+            Console.WriteLine($"{products.Count} products returned from cache");
+            return products;
+        }
 
-        var products = ParseProducts(webPages);
-        await ProductCache.UpdateProducts(shop, products);
+        Console.WriteLine($"Scraping {shop} Products");
+        // scrape products from web
+        var webPages = await RequestManager.ScrapeShop(shop);
+        if (webPages == null || webPages.Count == 0)
+        {
+            Console.WriteLine("Failed to scrape products, returning cached products");
+            return _productCache.GetProducts(shop);
+        }
+
+        // parse products
+        products = ParseProducts(shop, webPages);
+        Console.WriteLine($"{products.Count} Products scraped from {shop}");
+        
+        // update cache
+        Console.WriteLine("Updating Cache");
+        await _productCache.UpdateProducts(shop, products);
         
         return products;
     }
 
-    public static List<IProduct> ParseProducts(List<HtmlDocument> htmlDocuments)
+    private List<Product> ParseProducts(Shop shop, List<HtmlDocument> htmlDocs)
     {
-        
+        List<Product> products = [];
+        switch (shop)
+        {
+            case Shop.Checkers:
+                foreach (var htmlDoc in htmlDocs)
+                    products.AddRange(_checkersParser.GetProducts(htmlDoc)); 
+                break;
+            case Shop.Woolworths:
+                foreach (var htmlDoc in htmlDocs)
+                    products.AddRange(_wooliesParser.GetProducts(htmlDoc)); 
+                break;
+            case Shop.PickNPay:
+                foreach (var htmlDoc in htmlDocs)
+                    products.AddRange(_pnpParser.GetProducts(htmlDoc)); 
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(shop), shop, null);
+        }
+
+        return products;
     }
 }

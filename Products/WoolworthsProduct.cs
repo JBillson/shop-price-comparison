@@ -1,11 +1,16 @@
+using shopping_app.Products.Enums;
 using shopping_app.Products.Interface;
 
 namespace shopping_app.Products;
 
-public class WoolworthsProduct : IProduct
+public class WoolworthsProduct : Product
 {
-    public required string? Name { get; set; }
-    public required double Price { get; set; }
-    public IProduct.Pricing? PriceType { get; set; }
-    public string? Special { get; set; }
+    public WoolworthsProduct(string name, double price, string? special = null, PriceType? priceType = null)
+    {
+        Shop = Shop.Woolworths;
+        Name = name;
+        Price = price;
+        PriceType = priceType ?? Enums.PriceType.PerItem;
+        Special = special;
+    }
 }

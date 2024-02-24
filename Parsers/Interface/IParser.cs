@@ -5,5 +5,5 @@ namespace shopping_app.Parsers.Interface;
 
 public interface IParser
 {
-    List<IProduct> GetProducts(HtmlDocument html, bool includeEmptyNames = false);
+    List<Product> GetProducts(HtmlDocument html);
 }

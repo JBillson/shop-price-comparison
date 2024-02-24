@@ -8,9 +8,9 @@ namespace shopping_app.Parsers;
 
 public class PnpParser : IParser
 {
-    public List<IProduct> GetProducts(HtmlDocument html, bool includeEmptyNames = false)
+    public List<Product> GetProducts(HtmlDocument html)
     {
-        List<IProduct> products = [];
+        List<Product> products = [];
 
         var itemGrid = html.DocumentNode.Descendants("div").ToList()
             .FirstOrDefault(x => x.HasClass("cx-product-container--grid"));
@@ -19,27 +19,25 @@ public class PnpParser : IParser
 
         foreach (var item in items)
         {
+            // get name
             var infoContainer = item.FirstChild.Descendants("div")
                 .FirstOrDefault(x => x.HasClass("product-grid-item__info-container"));
-
-            var title = infoContainer?.Descendants("a")
+            var name = infoContainer?.Descendants("a")
                 .FirstOrDefault(x => x.HasClass("product-grid-item__info-container__name"))?.InnerText.Trim();
-            if (string.IsNullOrWhiteSpace(title) && !includeEmptyNames) continue;
+            if (string.IsNullOrWhiteSpace(name)) continue;
 
-            var price = infoContainer?.Descendants("div")
+            // get price
+            var priceText = infoContainer?.Descendants("div")
                 .FirstOrDefault(x => x.HasClass("product-grid-item__price-container"))?.InnerText.Trim();
-            if (string.IsNullOrWhiteSpace(price)) continue;
+            if (string.IsNullOrWhiteSpace(priceText)) continue;
+            var price = double.Parse(priceText.TrimStart('R').Trim(), CultureInfo.InvariantCulture);
 
+            // get special
             var special = infoContainer?.Descendants("div")
                 .FirstOrDefault(x => x.HasClass("product-grid-item__promotion-container"))?.InnerText.Trim();
 
-            var product = new PnpProduct
-            {
-                Name = title,
-                Price = double.Parse(price.TrimStart('R').Trim(), CultureInfo.InvariantCulture),
-                Special = special,
-                PriceType = IProduct.Pricing.PerItem
-            };
+            // create product
+            var product = new PnpProduct(name, price, special);
             products.Add(product);
         }
 

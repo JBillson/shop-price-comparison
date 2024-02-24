@@ -5,7 +5,9 @@ namespace shopping_app.Utilities;
 
 public static class RequestManager
 {
-    public static async Task<List<HtmlDocument>?> ScrapeShop(Shop shop, bool searchMultiplePages = false)
+    private static readonly HtmlWeb Web = new();
+    
+    public static async Task<List<HtmlDocument>?> ScrapeShop(Shop shop)
     {
         var url = shop switch
         {
@@ -14,61 +16,49 @@ public static class RequestManager
             Shop.PickNPay => "https://www.pnp.co.za/search/all",
             _ => throw new ArgumentOutOfRangeException(nameof(shop), shop, null)
         };
-        
+
+        return await ScrapeMultiplePages(shop, url);
+    }
+
+    private static async Task<List<HtmlDocument>> ScrapeMultiplePages(Shop shop, string url)
+    {
         const int pageLimit = 100;
         List<HtmlDocument> htmlDocs = [];
-        var web = new HtmlWeb();
-        if (searchMultiplePages)
-        {
-            var pageNumber = 1;
-            while (pageNumber < pageLimit)
-            {
-                try
-                {
-                    var page = shop switch
-                    {
-                        Shop.Woolworths => $"?No={(pageNumber - 1) * 25}&Nrpp=25",
-                        Shop.Checkers => $"&page={pageNumber}",
-                        _ => throw new ArgumentOutOfRangeException(nameof(shop), shop, null)
-                    };
-                    
-                    Console.WriteLine($"Scraping {url}{page}");
-
-                    var htmlDoc = await web.LoadFromWebAsync(url + page);
-                    if (htmlDoc == null)
-                    {
-                        Console.WriteLine(
-                            $"Stopping multiple page search at page {pageNumber} due to no Html Doc being returned.");
-                        throw new Exception("Probably been flagged as a bot");
-                    }
-
-                    htmlDocs.Add(htmlDoc);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"Stopping multiple page search at page {pageNumber} due to exception:\n" +
-                                      $"{e.Message}");
-                    throw;
-                }
-
-                pageNumber++;
-            }
-        }
-        else
+        var pageNumber = 1;
+        
+        while (pageNumber < pageLimit)
         {
             try
             {
-                htmlDocs.Add(await web.LoadFromWebAsync(url));
+                var page = shop switch
+                {
+                    Shop.Woolworths => $"?No={(pageNumber - 1) * 25}&Nrpp=25",
+                    Shop.Checkers => $"&page={pageNumber}",
+                    _ => throw new ArgumentOutOfRangeException(nameof(shop), shop, null)
+                };
+
+                Console.WriteLine($"Scraping {url}{page}");
+
+                var htmlDoc = await Web.LoadFromWebAsync(url + page);
+                if (htmlDoc == null)
+                {
+                    Console.WriteLine(
+                        $"Stopping multiple page search at page {pageNumber} due to no Html Doc being returned.");
+                    break;
+                }
+
+                htmlDocs.Add(htmlDoc);
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Failed to load url: {url}" +
+                Console.WriteLine($"Stopping multiple page search at page {pageNumber} due to exception:\n" +
                                   $"{e.Message}");
-                throw;
+                break;
             }
+
+            pageNumber++;
         }
 
         return htmlDocs;
     }
-
 }

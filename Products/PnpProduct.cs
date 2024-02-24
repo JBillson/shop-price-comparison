@@ -3,10 +3,14 @@ using shopping_app.Products.Interface;
 
 namespace shopping_app.Products;
 
-public class PnpProduct : IProduct
+public class PnpProduct : Product
 {
-    public required string? Name { get; set; }
-    public required double Price { get; set; }
-    public ProductPriceType? PriceType { get; set; }
-    public string? Special { get; set; }
+    public PnpProduct(string name, double price, string? special = null, PriceType? priceType = null)
+    {
+        Shop = Shop.PickNPay;
+        Name = name;
+        Price = price;
+        PriceType = priceType ?? Enums.PriceType.PerItem;
+        Special = special;
+    }
 }
